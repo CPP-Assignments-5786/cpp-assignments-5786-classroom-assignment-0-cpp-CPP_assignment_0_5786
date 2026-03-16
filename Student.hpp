@@ -15,7 +15,7 @@ public:
     void drinkCoffee();
     void addAssignment();
     void submitAssignment();
-    void sleep(double hours);
+    void sleep(int hours);
     void cramForExam();
 
     std::string getName()           const;

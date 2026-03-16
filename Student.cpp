@@ -8,8 +8,7 @@ static const int    MAX_PANIC        = 10;
 static const int    MIN_PANIC        = 0;
 static const double MIN_SLEEP        = 0.0;
 static const int    CRAM_COFFEE      = 3;
-static const int    CRAM_SLEEP       = 3;
-static const double CRAM_SLEEP_D     = 3.0;
+static const double CRAM_SLEEP       = 3.0;
 static const int    CRAM_PANIC       = 4;
 static const int    MOOD_ZEN_MAX     = 2;
 static const int    MOOD_NERVOUS_MAX = 5;
@@ -38,13 +37,13 @@ void Student::submitAssignment() {
 }
 
 void Student::sleep(int hours) {
-    hoursSlept += static_cast<double>(hours);
+    hoursSlept += hours;
     panicLevel = std::max(MIN_PANIC, panicLevel - hours / 2);
 }
 
 void Student::cramForExam() {
     coffeeCount += CRAM_COFFEE;
-    hoursSlept   = std::max(MIN_SLEEP, hoursSlept - CRAM_SLEEP_D);
+    hoursSlept   = std::max(MIN_SLEEP, hoursSlept - CRAM_SLEEP);
     panicLevel   = std::min(MAX_PANIC, panicLevel + CRAM_PANIC);
 }
 
