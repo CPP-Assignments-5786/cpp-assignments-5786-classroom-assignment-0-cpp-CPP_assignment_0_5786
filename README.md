@@ -35,6 +35,8 @@ return ""; // REPLACE THIS LINE
 
 ## פקודות
 
+יש להריץ בסביבת לינוקס:
+
 ```bash
 make        # מקמפל ומריץ את הדמו
 make test   # מריץ את הבדיקות
