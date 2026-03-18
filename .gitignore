@@ -2,4 +2,4 @@
 *.o
 demo
 test
-.github/workflows
+/.github/workflows
