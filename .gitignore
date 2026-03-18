@@ -2,8 +2,3 @@
 *.o
 demo
 test
-build/
-*.o
-demo
-test
-.idea/

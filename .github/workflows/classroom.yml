@@ -1,11 +1,8 @@
 name: Autograding Tests
-
-on:
-  workflow_dispatch:
-  repository_dispatch:
+'on':
+  repository_dispatch: []
   schedule:
-    - cron: '*/5 * * * *'  # every 30 minutes
-
+  - cron: '27 10 * * *'
 permissions:
   checks: write
   actions: read
