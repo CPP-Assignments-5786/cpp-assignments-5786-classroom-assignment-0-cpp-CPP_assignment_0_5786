@@ -2,3 +2,14 @@
 *.o
 demo
 test
+
+# IDE build folders
+build/
+cmake-build-debug/
+cmake-build-release/
+.cxx/
+out/
+.idea/
+
+# GitHub Actions
+.github/workflows/*.yml
